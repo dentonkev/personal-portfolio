@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -6,20 +8,23 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: white;
+    font-family: Rubik;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 50px;
-    font-size: 20px;
-    font-weight: 400;
+    padding: 30px 150px;
     /* background-color: seagreen; */
 }
 
 .navbar a {
     text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
 }
 
 .navbar ul {
@@ -46,4 +51,34 @@ html {
     justify-content: space-between;
     align-items: center;
 }
+
+.intro_container {
+    display: flex;
+    padding: 75px 200px;
+    justify-content: space-between;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.intro p {
+    font-size: 50px;
+    color: black;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.socials a{
+    padding: 0px 5px
+}
+
+
+
 
