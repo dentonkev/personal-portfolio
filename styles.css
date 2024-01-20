@@ -17,14 +17,7 @@ a {
     box-sizing: border-box;
 }
 
-.landing_page{
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    background: radial-gradient(circle at 10% 20%, rgb(215, 223, 252) 0%, rgb(255, 255, 255) 0%, rgb(215, 223, 252) 84%);
-}
-
-.page {
+.landing_page {
     font-family: Rubik, sans-serif;
     width: 100%;
     height: 100%;
@@ -36,7 +29,7 @@ a {
     position: relative;
 }
 
-.page .name {
+.landing_page .name {
     color: white;
     font-size: 100px;
     font-weight: 650;
@@ -105,7 +98,7 @@ a {
     color: aliceblue;
 }
 
-.page .arrow i {
+.landing_page .arrow i {
     font-size: 60px;
     cursor: pointer;
     color: white;
@@ -114,7 +107,7 @@ a {
     bottom: 15%;
 }
 
-.page .arrow i:hover {
+.landing_page  .arrow i:hover {
     color: black;
 }
 
@@ -209,3 +202,10 @@ a {
     font-family: Rubik, sans-serif;
     background: #F5F5F5;
 }
+
+/* .landing_page{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: radial-gradient(circle at 10% 20%, rgb(215, 223, 252) 0%, rgb(255, 255, 255) 0%, rgb(215, 223, 252) 84%);
+} */
