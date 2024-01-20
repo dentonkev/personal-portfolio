@@ -5,17 +5,49 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    color: inherit;
+    text-decoration: none; 
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.background {
+.landing_page{
     width: 100%;
     height: 100%;
     min-height: 100vh;
     background: radial-gradient(circle at 10% 20%, rgb(215, 223, 252) 0%, rgb(255, 255, 255) 0%, rgb(215, 223, 252) 84%);
+}
+
+.page {
+    font-family: Rubik, sans-serif;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.page .name {
+    color: white;
+    font-size: 100px;
+    font-weight: 650;
+}
+
+.landing_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
 }
 
 .navbar {
@@ -24,26 +56,27 @@ html {
     align-items: center;
     padding: 30px 10%;
     font-family: Rubik, sans-serif;
+    position: absolute;
+    top: 0;
+    width: 90%;
 }
 
 .navbar a {
-    text-decoration: none;
     font-size: 20px;
     font-weight: 500;
-    color: black;
+    color: white;
     border-bottom: 3px solid transparent;
     transition: all 0.5s ease-in;
 }
 
 .navbar a:hover {
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid white;
 }
 
 .navbar li {
     list-style: none;
     display: inline;
     padding: 0px 15px;
-    transition: 0.4s;
 }
 
 .left_nav {
@@ -65,11 +98,24 @@ html {
 #menu {
     font-size: 35px;
     cursor: pointer;
-    /* display: none; */
+    display: none;
 }
 
 .navbar i:hover {
     color: aliceblue;
+}
+
+.page .arrow i {
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.5s ease-in;
+    position: absolute;
+    bottom: 15%;
+}
+
+.page .arrow i:hover {
+    color: black;
 }
 
 .intro_container {
@@ -109,25 +155,57 @@ html {
 .socials a {
     padding: 0px 5px;
     border-bottom: 3px solid transparent;
+    transition: all 0.5s ease-in;
 }
 
 .socials a:hover {
-    transition: all 0.5s ease-in;
     border-bottom: 3px solid black;
 }
 
-#arrowdown {
-    font-size: 60px;
-    margin: auto 50%;
-    cursor: pointer;
+.about {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: white;
+    font-family: Rubik, sans-serif;
+    background: #F5F5F8;
 }
 
-.arrow i:hover {
-    color: aliceblue;
-    transition: 0.4s;
+.about_title {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    padding: 30px 10%;
 }
 
+.about_container {
+    display: flex;
+    font-size: 27px;
+    padding: 55px 15%;
+}
 
+.about_container p { 
+    display: flex;
+    font-size: 27px;
+    padding-top: 50px;
+    padding-right: 50px;
+    transition: ease 1.5s;
+}
 
+.projects {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: white;
+    font-family: Rubik, sans-serif;
+    background: #F5F5F5;
+}
 
-
+.contact {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: white;
+    font-family: Rubik, sans-serif;
+    background: #F5F5F5;
+}
