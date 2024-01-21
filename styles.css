@@ -210,7 +210,12 @@ a {
 
 .projects_container p {
     line-height: 1.8em;
-    margin-bottom: 20px;
+}
+
+.project .frameworks {
+    color: #73bdba;
+    font-weight: 500;
+    margin-bottom: 65px;
 }
 
 .project {
