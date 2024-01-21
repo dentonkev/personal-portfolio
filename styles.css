@@ -185,6 +185,10 @@ a {
     /* background: #e5e6ea; */
     background: radial-gradient(circle at 10% 20%, rgb(215, 223, 252) 0%, rgb(255, 255, 255) 0%, rgb(215, 223, 252) 84%);
     font-family: Rubik, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 .projects_title {
