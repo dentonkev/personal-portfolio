@@ -6,7 +6,7 @@
     <title>Denton Kev</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <style> @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); </style>
   </head>
 
@@ -21,7 +21,8 @@
           <ul>
             <li><a href="#about-section">About</a></li>
             <li><a href="#projects-section">Projects</a></li>
-            <li><a href="#contact-section">Contact</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#skills-section">Contact</a></li>
           </ul>
         </nav>
         <i class='bx bx-menu-alt-right' id="menu"></i>
@@ -34,6 +35,10 @@
       <div class="arrowdown">
           <a href="#about-section"><i class='bx bx-chevron-down'></i></a>
       </div>   
+
+      <div class="arrowup">
+        <a href="#landing"><i class='bx bx-chevron-up'></i></a>
+      </div>
 
       <video class="landing_video" autoplay muted loop>
         <source src="videos/grass.mp4" type="video/mp4">
@@ -61,15 +66,10 @@
 
       <div class="socials">
         <div class="links">
-          <a href="https://github.com/dentonkev" target="_blank"><img src="images/github-mark.png" alt="github logo" height="50px" width="auto"></a>
-          <a href="https://www.linkedin.com/in/dentonkev" target="_blank"><img src="images/linked-in.png" alt="github logo"  height="50px" width="auto"></a>
-        </div>
-          <div class="arrowup">
-            <a href="#landing"><i class='bx bx-chevron-up'></i></a>
-          </div>
-        </div>
-      </div> 
-     
+          <a href="https://github.com/dentonkev" target="_blank"><i class='bx bxl-github'></i></a>
+          <a href="https://www.linkedin.com/in/dentonkev" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+        </div> 
+      </div>
     </section>
 
     <section class="projects" id="projects-section">
@@ -79,50 +79,108 @@
         <div class="project">
           <img src="images/bot.png" height="300px" width="549px">
           <h1>DJet Bot</h1>
-          <p>DJet Bot is a discord music bot hat allows users to play music in voice channels of servers. It is built by using the discord.js and discord-player libraries.</p>
-          <p class="frameworks">javascript, discord.js, discord-player, api, git, npm</p>
+          <p>DJet Bot is a discord music bot that allows users to play music in voice channels of servers. It is built by using the discord.js and discord-player libraries.</p>
+          <p class="frameworks">{javascript, discord.js, discord-player, api, git, npm}</p>
+          <a href="https://github.com/dentonkev/discord-bot" target="_blank"><i class='bx bxl-github'></i></a>
         </div>
 
         <div class="project">
           <img src="images/website.png" height="300px" width="549px">
           <h1>Personal Portfolio Website</h1>
           <p>My portfolio website you are currently viewing.</p>
-          <p class="frameworks">html, css, git</p>
+          <p class="frameworks">{html, css, git}</p>
+          <a href="https://github.com/dentonkev/personal-portfolio" target="_blank"><i class='bx bxl-github'></i></a>
         </div>
         
         <div class="project">
           <img src="images/kahoot.png" height="300px" width="549px">
           <h1>Kahoot Clone App</h1>
           <p>Worked in a team of 4 members to create a clone of the Kahoot application. Allows users to register, login, create quizzes and questions etc.</p>
-          <p class="frameworks">git, typescript, express.js, node.js, jest, npm</p>
+          <p class="frameworks end">{git, typescript, express.js, node.js, jest, npm}</p>
         </div>
 
         <div class="project">
           <img src="images/encoding.png" height="300px" width="549px">
           <h1>Encoding and Decoding Algorithm</h1>
           <p>Created an encoding and decoding algorithm by working with abstract data types, binary search trees and Huffman trees. Allows users to input any UTF-8 characters and receive a specific encoding/decoding.</p>
-          <p class="frameworks">c, data structures and algorithms</p>
+          <p class="frameworks">{c, data structures and algorithms}</p>
         </div>
 
         <div class="project">
           <img src="images/basin.png" height="300px" width="549px">
           <h1>Rsync Utility Clone</h1>
           <p>Designed a file management system similar to rsync which allow users to efficiently sync over files within a system.</p>
-          <p class="frameworks">c, file systems</p>
+          <p class="frameworks">{c, file systems}</p>
         </div>
-
       </div> 
-
     </section>
 
-    <section class="contact" id="contact-section">
-      <h1 class="contact_title">Contact Me</h1>
+    <section class="skills_page" id="skills-section">
+        <h1 class="skills_title">Skills.</h1>
+  
+        <div class="skills_container"> 
+          <div class="card">
+            <i class="devicon-c-plain colored"></i>
+            C
+          </div>
+          <div class="card">
+            <i class="devicon-javascript-plain colored"></i>
+            JavaScript
+          </div>
+          <div class="card">
+            <i class="devicon-typescript-plain colored"></i>
+            TypeScript
+          </div>
+          <div class="card">
+            <i class="devicon-html5-plain colored"></i>
+            HTML
+          </div>
+          <div class="card">
+            <i class="devicon-css3-plain colored"></i>
+            CSS
+          </div>
+          <div class="card">
+            <i class="devicon-git-plain colored"></i>
+            Git
+          </div>
+          <div class="card">
+            <i class="devicon-github-original"></i>
+            GitHub
+          </div>
+          <div class="card">
+            <i class="devicon-gitlab-plain colored"></i>
+            GitLab
+          </div>
+        </div>
+        
+        
+        <h1 class="contact_title">Contact Me.</h1>
 
-      <div class="contact_container">
-        <p class="contact_writing">
-          Hey! I am currently a second year student studying a Bachelor of Computer Science 💻 at the University of New South Wales (UNSW). I am passionate about programming and 
-          like to build projects whenever I can. In my spare time I go to the gym, solve rubik's cubes and travel ✈️. 
-        </p>
+        <div class="contact_container"> 
+          <div class="card">
+            <i class='bx bx-envelope'></i>
+            dentonkev122@gmail.com
+          </div>
+        </div>
+
+        <div class="copyright_section">
+          <hr>
+          
+          <div class="copyright_container">
+            <div class="left_copy">
+              <text>© Denton Kev / 2024</text>
+            </div>
+            
+            <div class="right_copy">
+              <a href="https://github.com/dentonkev" target="_blank"><i class='bx bxl-github'></i></a>
+              <a href="https://www.linkedin.com/in/dentonkev" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+          </div>
+        </div>
+
+        <video class="ending_video" autoplay muted loop>
+          <source src="videos/night.mp4" type="video/mp4">
+        </video>
     </section>
   </body>
 </html>
