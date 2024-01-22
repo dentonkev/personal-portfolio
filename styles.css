@@ -322,7 +322,7 @@ a {
 hr {
     display: block;
     border: 0;
-    border-top: 3px solid black;
+    border-top: 3px solid white;
     margin: 2% 15% 0.5%;
   }
 
@@ -332,7 +332,7 @@ hr {
     align-items: center;
     margin: 0% 15% 2%;
     font-weight: 500;
-    color: black;
+    color: white;
 }
 
 .copyright_container .left_copy text {
