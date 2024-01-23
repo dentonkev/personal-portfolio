@@ -504,6 +504,10 @@ hr {
 
 
 @media (max-width: 627px) {
+    .landing_page .name {
+        font-size: 80px;
+    }
+
     .about_container {
         justify-content: center;
         padding: 20px 7% 0% 13%;
@@ -533,6 +537,10 @@ hr {
 }
 
 @media (max-width: 555px) {
+    .landing_page .name {
+        font-size: 70px;
+    }
+
     .project .image {
         height: 175px;
         width: 300px;
@@ -543,7 +551,19 @@ hr {
     }
 }
 
+
+@media (max-width: 450px) {
+    .landing_page .name {
+        font-size: 60px;
+    }
+}
+
+
 @media (max-width: 384px) {
+    .landing_page .name {
+        font-size: 50px;
+    }
+
     .project .image {
         height: 120px;
         width: 250px;
