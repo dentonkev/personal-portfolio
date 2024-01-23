@@ -14,6 +14,8 @@ a {
     box-sizing: border-box;
 }
 
+
+
 .landing_page {
     font-family: Rubik, sans-serif;
     min-height: 100vh;
@@ -63,7 +65,7 @@ a {
 }
 
 .navbar .left_nav a:hover {
-    color: #cca0d7;
+    color: #e1c7e7;
 }
 
 .navbar .right_nav a {
@@ -96,28 +98,60 @@ a {
     align-items: center;
 }
 
-#menu {
+.navbar i{
     font-size: 35px;
     cursor: pointer;
-    color: white;
     display: none;
+    color: white;
+    transition: all 0.5s ease-in;
 }
 
 .navbar i:hover {
-    color: aliceblue;
+    color: #cca0d7;
+}
+
+.menu_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vh;
+    height: 100vh;
+    background-color: #acd9ec;
+    z-index: 1001;
+    display: none;
+}
+
+.menu_nav li{
+    list-style: none;
+    padding: 5px;
+    font-size: 35px;
+    transition: all 0.3s ease-in;
+}
+
+.menu_nav li:hover{
+    color: #cca0d7;
+}
+
+.menu_nav i{
+    font-size: 60px;
+    cursor: pointer;
 }
 
 .arrowdown i {
     font-size: 60px;
     cursor: pointer;
     color: white;
-    transition: color 0.3s ease-in;
+    transition: all 0.3s ease-in;
     position: absolute;
     bottom: 15%;
 }
 
 .arrowdown i:hover {
-    color: #7bad7d
+    color: #e1c7e7;
+    transform: translateY(-3px);
 }
 
 .arrowup {
@@ -162,7 +196,6 @@ a {
 .about_writing {
     font-size: 26px;
     transition: all ease 1.5s;
-    /* border-right: 5px solid; */
 }
 
 .socials {
@@ -187,6 +220,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.computer_image img {
+    height: 300px;
+    width: auto;
 }
 
 .projects {
@@ -226,9 +264,12 @@ a {
 }
 
 .project {
-    flex: 1;
     max-width: 549px; 
-    margin: 0 40px;
+}
+
+.project .image {
+    height: 300px;
+    width: 549px;
 }
 
 .project .frameworks {
@@ -355,6 +396,166 @@ hr {
     z-index: -1;
     top: 0;
     left: 0;
+}
+
+@media (max-width: 1399px) {
+    .projects_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 55px 5%;
+        max-width: 1321px;
+    }
+
+    .project {
+        margin-bottom: 65px;
+    }
+
+    .project i {
+        margin-bottom: 0;
+    }
+    .project .end {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 1391px) {
+    .about_writing {
+        font-size: 23px;
+    }
+
+    .computer_image img {
+        height: 200px;
+        width: auto;
+    }
+
+    .socials .links a {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1192px) {
+    .about_writing {
+        font-size: 20px;
+        transition: all ease 1.5s;
+    }
+
+    .computer_image img {
+        height: 150px;
+        width: auto;
+    }
+
+    .socials .links a {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 942px) {
+    #menu {
+        display: block;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .right_nav {
+        display: none;
+    }
+
+    .about_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 55px 7% 0% 13%;
+    }
+
+    .about_writing {
+        font-size: 18px;
+        transition: all ease 1.5s;
+    }
+
+    .computer_image img {
+        display: none;
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        padding: 0px 13% 0px 13% 
+    }
+}
+
+@media (max-width: 777px) {
+    .project .image {
+        height: 275px;
+        width: 500px;
+    }
+
+    .project {
+        max-width: 500px; 
+    }
+}
+
+
+@media (max-width: 627px) {
+    .about_container {
+        justify-content: center;
+        padding: 20px 7% 0% 13%;
+    }
+
+    .about_writing {
+        font-size: 16px;
+        transition: all ease 1.5s;
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        padding: 0px 13% 0px 13% 
+    }
+
+    .project .image {
+        height: 230px;
+        width: 400px;
+    }
+
+    .project {
+        max-width: 400px; 
+    }
+}
+
+@media (max-width: 555px) {
+    .project .image {
+        height: 175px;
+        width: 300px;
+    }
+
+    .project {
+        max-width: 300px; 
+    }
+}
+
+@media (max-width: 384px) {
+    .project .image {
+        height: 120px;
+        width: 250px;
+    }
+
+    .project {
+        max-width: 200px; 
+    }   
+
+    .contact_container .card i {
+        font-size: 15px
+    }
 }
 
 /* .landing_page{
