@@ -11,3 +11,5 @@ document.addEventListener('DOMContentLoaded', () => {
       menuNav.style.display = 'none';
   });
 });
+
+document.querySelector('.landing_video').setAttribute('controls', 'false');
