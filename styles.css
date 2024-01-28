@@ -14,8 +14,6 @@ a {
     box-sizing: border-box;
 }
 
-
-
 .landing_page {
     font-family: Rubik, sans-serif;
     min-height: 100vh;
@@ -299,6 +297,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    background: rgb(0, 0, 0, 0.3);
 }
 
 .skills_title, .contact_title {
@@ -389,8 +388,8 @@ hr {
 }
 
 .ending_video {
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     object-fit: cover;
     z-index: -1;
