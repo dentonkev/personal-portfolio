@@ -12,4 +12,3 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-document.querySelector('.landing_video').setAttribute('controls', 'false');
