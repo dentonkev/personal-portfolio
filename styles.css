@@ -550,6 +550,24 @@ hr {
     .project {
         max-width: 300px; 
     }
+
+    .skills_container .card {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .skills_container .card i {
+        font-size: 20px
+    }
+
+    .contact_container .card {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .contact_container .card i {
+        font-size: 20px
+    }
 }
 
 
@@ -557,8 +575,25 @@ hr {
     .landing_page .name {
         font-size: 60px;
     }
-}
 
+    .skills_container .card {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .skills_container .card i {
+        font-size: 15px
+    }
+
+    .contact_container .card {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .contact_container .card i {
+        font-size: 15px
+    }
+}
 
 @media (max-width: 384px) {
     .landing_page .name {
