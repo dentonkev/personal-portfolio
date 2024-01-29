@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style> @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); </style>
   </head>
 
@@ -62,7 +63,7 @@
 
       <div class="about_container">
         <div>
-          <p class="about_writing">
+          <p class="about_writing" data-aos="slide-right">
             <span style="color: grey;">01 &lt; </span> <span>Hey, I'm <span style="color: #73bdba;">Denton!</span> <span style="color: grey;">&gt;</span></span><br>
             <span style="color: grey;">02 &lt; </span> <span> currently studying <span style="color: #9fbf55;">computer science 💻</span> at unsw, </span> <br>
             <span style="color: grey;">03 </span> &nbsp;<span> passionate about programming and <span style="color: #c65a58;"> engineering.</span></span> <br>
@@ -76,7 +77,7 @@
         </div>
       </div>
 
-      <div class="socials">
+      <div class="socials" data-aos="flip-down">
         <div class="links">
           <a href="https://github.com/dentonkev" target="_blank"><i class='bx bxl-github'></i></a>
           <a href="https://www.linkedin.com/in/dentonkev" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
@@ -88,7 +89,7 @@
       <h1 class="projects_title">Projects.</h1>
 
       <div class="projects_container">
-        <div class="project">
+        <div class="project" data-aos="zoom-in-up">
           <img src="images/bot.png" class="image">
           <h1>DJet Bot</h1>
           <p>DJet Bot is a discord music bot that allows users to play music in voice channels of servers. It is built by using the discord.js and discord-player libraries.</p>
@@ -96,7 +97,7 @@
           <a href="https://github.com/dentonkev/discord-bot" target="_blank"><i class='bx bxl-github'></i></a>
         </div>
 
-        <div class="project">
+        <div class="project" data-aos="zoom-in-up">
           <img src="images/website.png" class="image">
           <h1>Personal Portfolio Website</h1>
           <p>My portfolio website you are currently viewing.</p>
@@ -104,28 +105,28 @@
           <a href="https://github.com/dentonkev/personal-portfolio" target="_blank"><i class='bx bxl-github'></i></a>
         </div>
         
-        <div class="project">
+        <div class="project" data-aos="zoom-in-up">
           <img src="images/kahoot.png" class="image">
           <h1>Kahoot Clone App</h1>
           <p>Worked in a team of 4 members to create a clone for the backend of the Kahoot application. Allows users to register, login, create quizzes and questions etc.</p>
           <p class="frameworks end">{git, typescript, express.js, node.js, jest, npm}</p>
         </div>
 
-        <div class="project">
+        <div class="project" data-aos="zoom-in-up">
           <img src="images/encoding.png" class="image">
           <h1>Encoding and Decoding Algorithm</h1>
           <p>Created an encoding and decoding algorithm by working with abstract data types, binary search trees and Huffman trees. Allows users to input any UTF-8 characters and receive a specific encoding/decoding.</p>
           <p class="frameworks">{c, data structures and algorithms}</p>
         </div>
 
-        <div class="project">
+        <div class="project" data-aos="zoom-in-up">
           <img src="images/basin.png" class="image">
           <h1>Rsync Utility Clone</h1>
           <p>Designed a file management system similar to rsync which allow users to efficiently sync over files within a system.</p>
           <p class="frameworks">{c, file systems}</p>
         </div>
 
-        <div class="project">
+        <div class="project" data-aos="zoom-in-up">
           <img src="images/map.png" class="image">
           <h1>Navigation Application</h1>
           <p>Developed an application that uses Dijkstra's algorithm to calculate the shortest distance between two locations on a map through the use of the graph data structure.</p>
@@ -138,35 +139,35 @@
         <h1 class="skills_title">Skills.</h1>
   
         <div class="skills_container"> 
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <i class="devicon-c-plain colored"></i>
             C
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <i class="devicon-javascript-plain colored"></i>
             JavaScript
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <i class="devicon-typescript-plain colored"></i>
             TypeScript
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <i class="devicon-html5-plain colored"></i>
             HTML
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <i class="devicon-css3-plain colored"></i>
             CSS
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <i class="devicon-git-plain colored"></i>
             Git
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <i class="devicon-github-original"></i>
             GitHub
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <i class="devicon-gitlab-plain colored"></i>
             GitLab
           </div>
@@ -176,7 +177,7 @@
         <h1 class="contact_title">Contact Me.</h1>
 
         <div class="contact_container"> 
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <i class='bx bx-envelope'></i>
             dentonkev122@gmail.com
           </div>
@@ -201,6 +202,11 @@
           <source src="videos/tree.mp4" type="video/mp4">
         </video>
     </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
 

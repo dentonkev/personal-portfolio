@@ -157,10 +157,12 @@ a {
     right: 20px;
     bottom: 20px;
     z-index: 1000;
+    background-color: #a8d7eb;
+    border-radius: 50px;
 }
 
 .arrowup i {
-    font-size: 60px;
+    font-size: 40px;
     cursor: pointer;
     color: black;
     transition: color 0.5s ease-in;
@@ -297,7 +299,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background: rgb(0, 0, 0, 0.25);
+    background: rgb(0, 0, 0, 0.3);
 }
 
 .skills_title, .contact_title {
@@ -321,7 +323,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: rgb(48, 47, 47);
     color: white;
     font-size: 20px;
     padding: 20px;
@@ -347,7 +349,7 @@ a {
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: black;
+    background-color: rgb(48, 47, 47);
     font-size: 20px;
     font-weight: 600;
     padding: 20px;  
