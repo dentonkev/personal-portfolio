@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Denton Kev</title>
   <script src="script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <link rel="icon" href="images/rubiks.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -25,7 +26,6 @@
       </div>
       <nav class="right_nav">
         <ul>
-          <li><a href="#about-section">About</a></li>
           <li><a href="#projects-section">Projects</a></li>
           <li><a href="#skills-section">Skills</a></li>
           <li><a href="#skills-section">Contact</a></li>
@@ -37,7 +37,6 @@
     <nav class="menu_nav">
       <ul>
         <li><i class='bx bx-x exit'></i></li>
-        <li><a href="#about-section">About</a></li>
         <li><a href="#projects-section">Projects</a></li>
         <li><a href="#skills-section">Skills</a></li>
         <li><a href="#skills-section">Contact</a></li>
@@ -48,8 +47,12 @@
       Denton Kev
     </div>
 
+    <div class="about">
+      <p id="typed"></p>  
+    </div>
+
     <div class="arrowdown">
-      <a href="#about-section"><i class='bx bx-chevron-down'></i></a>
+      <a href="#projects-section"><i class='bx bx-chevron-down'></i></a>
     </div>
 
     <div class="arrowup">
@@ -61,42 +64,30 @@
     </video>
   </section>
 
-  <section class="about_section" id="about-section">
-    <h1 class="about_title">About me.</h1>
-
-    <div class="about_container">
-      <div>
-        <p class="about_writing" data-aos="slide-right">
-          <span style="color: grey;">01 &lt; </span> <span>Hey, I'm <span style="color: #73bdba;">Denton!</span> <span
-              style="color: grey;">&gt;</span></span><br>
-          <span style="color: grey;">02 &lt; </span> <span> currently studying <span style="color: #9fbf55;">computer
-              science 💻</span> at unsw, </span> <br>
-          <span style="color: grey;">03 </span> &nbsp;<span> passionate about programming and <span
-              style="color: #c65a58;"> engineering.</span></span> <br>
-          <span style="color: grey;">04 </span> &nbsp; <span> i am also a senior <span style="color: #f4a548;">physics
-              tutor</span> and i solve</span> <br>
-          <span style="color: grey;">05 </span> &nbsp; rubiks cubes <img src="images/rubiks-emoji.png" height="25px">,
-          go to the gym 🏋️ and travel ✈️ for fun <span style="color: grey;">&gt;</span>
-        </p>
-      </div>
-
-      <div class="computer_image">
-        <img src="images/process.gif">
-      </div>
-    </div>
-
-    <div class="socials" data-aos="flip-down">
-      <div class="links">
-        <a href="https://github.com/dentonkev" target="_blank"><i class='bx bxl-github'></i></a>
-        <a href="https://www.linkedin.com/in/dentonkev" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-      </div>
-    </div>
-  </section>
-
   <section class="projects" id="projects-section">
     <h1 class="projects_title">Projects.</h1>
 
     <div class="projects_container">
+      <div class="project" data-aos="zoom-in-up">
+        <img src="images/sqli.png" class="image">
+        <h1>SQL Injection Guide</h1>
+        <p>This project was my Something Awesome Project for the course COMP6841 which I took in 24T3. It is a platform designed to teach users about SQL 
+          injection through interactive challenges.</p>
+        <p class="frameworks">{postgreSQL, express.js, react, node.js, git}</p>
+        <a href="https://github.com/dentonkev/sqli-guide" target="_blank"><i class='bx bxl-github'></i></a>
+      </div>
+
+      <div class="project" data-aos="zoom-in-up">
+        <div class="hackathon">
+          <img src="images/hackathon.jpeg" class="image">
+        </div>
+        <h1>CSESoc Hackathon</h1>
+        <p>Developed a mobile application that leverages computer vision and image analysis to
+          provide users with detailed nutritional information on food products.</p>
+        <p class="frameworks">{react native, expo, express.js, openai api}</p>
+        <a href="https://github.com/dentonkev/csesoc-hackathon" target="_blank"><i class='bx bxl-github'></i></a>
+      </div>
+
       <div class="project" data-aos="zoom-in-up">
         <img src="images/bot.png" class="image">
         <h1>DJet Bot</h1>
@@ -110,7 +101,7 @@
         <img src="images/website.png" class="image">
         <h1>Personal Portfolio Website</h1>
         <p>My portfolio website you are currently viewing.</p>
-        <p class="frameworks">{html, css, git}</p>
+        <p class="frameworks">{html, css, javascript, git}</p>
         <a href="https://github.com/dentonkev/personal-portfolio" target="_blank"><i class='bx bxl-github'></i></a>
       </div>
 
@@ -138,39 +129,7 @@
           Implemented object-oriented design principles to model entities such as satellites, devices, and files and
           created a UML class diagram to visualise the system architecture and relationships between entities.
         </p>
-        <p class="frameworks">{java, git}</p>
-      </div>
-
-      <div class="project" data-aos="zoom-in-up">
-        <img src="images/kahoot.png" class="image">
-        <h1>Kahoot Clone App</h1>
-        <p>Worked in a team of 4 members to create a clone for the backend of the Kahoot application. Allows users to
-          register, login, create quizzes and questions etc.</p>
-        <p class="frameworks end">{git, typescript, express.js, node.js, jest, npm}</p>
-      </div>
-
-      <div class="project" data-aos="zoom-in-up">
-        <img src="images/encoding.png" class="image">
-        <h1>Encoding and Decoding Algorithm</h1>
-        <p>Created an encoding and decoding algorithm by working with abstract data types, binary search trees and
-          Huffman trees. Allows users to input any UTF-8 characters and receive a specific encoding/decoding.</p>
-        <p class="frameworks end">{c, data structures and algorithms}</p>
-      </div>
-
-      <div class="project" data-aos="zoom-in-up">
-        <img src="images/basin.png" class="image">
-        <h1>Rsync Utility Clone</h1>
-        <p>Designed a file management system similar to rsync which allow users to efficiently sync over files within a
-          system.</p>
-        <p class="frameworks end">{c, file systems}</p>
-      </div>
-
-      <div class="project" data-aos="zoom-in-up">
-        <img src="images/map.png" class="image">
-        <h1>Navigation Application</h1>
-        <p>Developed an application that uses Dijkstra's algorithm to calculate the shortest distance between two
-          locations on a map through the use of the graph data structure.</p>
-        <p class="frameworks">{c, data strucutes and algorithms}</p>
+        <p class="frameworks end">{java, git}</p>
       </div>
     </div>
   </section>
@@ -236,7 +195,7 @@
 
       <div class="copyright_container">
         <div class="left_copy">
-          <text>© Denton Kev / 2024</text>
+          <text>© Denton Kev / 2025</text>
         </div>
 
         <div class="right_copy">
@@ -259,24 +218,40 @@
 
 </html>
 
-<!-- <div class="intro_container">
-  <div class="intro">
-    <h2><span style="color: grey;"></span> Hey, I'm </h2>
-    <h1><span style="color: #73bdba;">Denton Kev</span></h1>
-    <p><span style="color: grey;">01 &lt; </span>bachelor of <span style="color: #9fbf55;">computer science </span>at unsw</p>
-    <p><span style="color: grey;">02</span> &nbsp; <span> i am a senior <span style="color: #c65a58;">physics tutor</span></span></p>
-    <p><span style="color: grey;">03 </span> &nbsp; i solve <span style="color: #f4a548;">rubiks cubes</span> for fun <span style="color: grey;">&gt;</span></p>
-  </div>
+<!-- Old Projects -->
+<!-- <div class="project" data-aos="zoom-in-up">
+  <img src="images/kahoot.png" class="image">
+  <h1>Kahoot Clone App</h1>
+  <p>Worked in a team of 4 members to create a clone for the backend of the Kahoot application. Allows users to
+    register, login, create quizzes and questions etc.</p>
+  <p class="frameworks end">{git, typescript, express.js, node.js, jest, npm}</p>
+</div>
 
-  <div class="socials">
-    <div>
-      <a href="https://github.com/dentonkev" target="_blank"><img src="images/github-mark.png" alt="github logo" height="50px" width="auto"></a>
-      <a href="https://www.linkedin.com/in/dentonkev" target="_blank"><img src="images/linked-in.png" alt="github logo"  height="50px" width="auto"></a>
-    </div>
-  </div> 
+<div class="project" data-aos="zoom-in-up">
+  <img src="images/encoding.png" class="image">
+  <h1>Encoding and Decoding Algorithm</h1>
+  <p>Created an encoding and decoding algorithm by working with abstract data types, binary search trees and
+    Huffman trees. Allows users to input any UTF-8 characters and receive a specific encoding/decoding.</p>
+  <p class="frameworks end">{c, data structures and algorithms}</p>
+</div>
+
+<div class="project" data-aos="zoom-in-up">
+  <img src="images/basin.png" class="image">
+  <h1>Rsync Utility Clone</h1>
+  <p>Designed a file management system similar to rsync which allow users to efficiently sync over files within a
+    system.</p>
+  <p class="frameworks end">{c, file systems}</p>
+</div>
+
+<div class="project" data-aos="zoom-in-up">
+  <img src="images/map.png" class="image">
+  <h1>Navigation Application</h1>
+  <p>Developed an application that uses Dijkstra's algorithm to calculate the shortest distance between two
+    locations on a map through the use of the graph data structure.</p>
+  <p class="frameworks">{c, data strucutes and algorithms}</p>
 </div> -->
 
-<!-- <p class="about_writing">
-  Hey! I am currently a second year student studying a Bachelor of Computer Science 💻 at the University of New South Wales (UNSW). I am passionate about programming and 
-  like to build projects whenever I can. In my spare time I go to the gym, solve rubik's cubes and travel ✈️. 
-</p> -->
+<!-- <div class="links">
+    <a href="https://github.com/dentonkev" target="_blank"><i class='bx bxl-github'></i></a>
+    <a href="https://www.linkedin.com/in/dentonkev" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+  </div> -->

@@ -10,5 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
   exit.addEventListener('click', () => {
       menuNav.style.display = 'none';
   });
-});
 
+  new Typed("#typed", {
+    strings: ["computer science @ unsw.", "IT support officer @ warakirri college."], 
+    typeSpeed: 30, 
+    backSpeed: 30, 
+    loop: true, 
+    backDelay: 1000, 
+    startDelay: 500,
+    showCursor: true,
+    cursorChar: "|",
+  });
+});
