@@ -135,7 +135,7 @@ a {
     align-items: center;
     font-size: 35px;
     font-weight: 500;
-    color: #9b83be
+    color: #9b83be;
 }
 
 #typed {
@@ -410,27 +410,6 @@ hr {
     }
 }
 
-@media (max-width: 1391px) {
-    .about_writing {
-        font-size: 23px;
-    }
-
-    .socials .links a {
-        font-size: 50px;
-    }
-}
-
-@media (max-width: 1192px) {
-    .about_writing {
-        font-size: 20px;
-        transition: all ease 1.5s;
-    }
-
-    .socials .links a {
-        font-size: 40px;
-    }
-}
-
 @media (max-width: 942px) {
     #menu {
         display: block;
@@ -443,26 +422,11 @@ hr {
     .right_nav {
         display: none;
     }
+}
 
-    .about_container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 55px 7% 0% 13%;
-    }
-
-    .about_writing {
-        font-size: 18px;
-        transition: all ease 1.5s;
-    }
-
-    .socials {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 150px;
-        padding: 0px 13% 0px 13% 
+@media (max-width: 860px) {
+    .landing_page .about {
+        font-size: 30px;
     }
 }
 
@@ -475,30 +439,21 @@ hr {
     .project {
         max-width: 500px; 
     }
+
+    .landing_page .about {
+        font-size: 27px;
+    }
 }
 
+@media (max-width: 720px) {
+    .landing_page .about {
+        font-size: 25px;
+    }
+}
 
 @media (max-width: 627px) {
     .landing_page .name {
         font-size: 80px;
-    }
-
-    .about_container {
-        justify-content: center;
-        padding: 20px 7% 0% 13%;
-    }
-
-    .about_writing {
-        font-size: 16px;
-        transition: all ease 1.5s;
-    }
-
-    .socials {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 150px;
-        padding: 0px 13% 0px 13% 
     }
 
     .project .image {
@@ -508,6 +463,10 @@ hr {
 
     .project {
         max-width: 400px; 
+    }
+
+    .landing_page .about {
+        font-size: 22px;
     }
 }
 
@@ -542,6 +501,10 @@ hr {
     .contact_container .card i {
         font-size: 20px
     }
+
+    .landing_page .about {
+        font-size: 18px;
+    }
 }
 
 
@@ -567,6 +530,10 @@ hr {
     .contact_container .card i {
         font-size: 15px
     }
+
+    .landing_page .about {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 384px) {
@@ -585,5 +552,9 @@ hr {
 
     .contact_container .card i {
         font-size: 15px
+    }
+
+    .landing_page .about {
+        font-size: 14px;
     }
 }

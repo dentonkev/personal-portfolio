@@ -4,19 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
   let exit = document.querySelector('.exit');
 
   menu.addEventListener('click', () => {
-      menuNav.style.display = 'flex';
+    menuNav.style.display = 'flex';
   });
 
   exit.addEventListener('click', () => {
-      menuNav.style.display = 'none';
+    menuNav.style.display = 'none';
   });
 
   new Typed("#typed", {
-    strings: ["computer science @ unsw.", "IT support officer @ warakirri college."], 
-    typeSpeed: 30, 
-    backSpeed: 30, 
-    loop: true, 
-    backDelay: 1000, 
+    strings: ["computer science @ unsw.", "software engineering intern @ saber astronautics.", "incoming cyber security engineering intern @ iag"],
+    typeSpeed: 30,
+    backSpeed: 30,
+    loop: true,
+    backDelay: 1000,
     startDelay: 500,
     showCursor: true,
     cursorChar: "|",
