@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   new Typed("#typed", {
-    strings: ["computer science @ unsw.", "software engineering intern @ saber astronautics.", "incoming cyber security engineering intern @ iag"],
+    strings: ["computer science @ unsw.", "software engineering intern @ optus."],
     typeSpeed: 30,
     backSpeed: 30,
     loop: true,
